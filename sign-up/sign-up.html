@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0,target-densitydapi=device-dpi, user-scalable=no" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="./css/sign-up.css">
+     <script src="./js/jquery.flip.min.js"></script>
+    
+    <script type="text/javascript">
+    $(document).ready(function() {
+        var btn=$("#sub");
+        var gulle=$("#gulle");
+
+     $("#sub").click(function(){ 
+       
+        btn.animate({
+     
+            height:'1em',
+            width:'1em',
+            borderRadius:'50%'
+        },600);
+
+     gulle.show(500);
+
+      
+
+
+ gulle.animate({
+    marginLeft:'-5em',
+  }, {
+    duration: 'slow',
+    
+    complete: function() {
+     
+        gulle.hide(200);
+        $("h1").hide(2);
+        $("h2").show(5);
+        $("h2").animate({
+          fontSize: '+=0.5em',  
+        });
+        $("h2").animate({
+          fontSize: '-=0.5em',  
+        });
+    }
+  });
+
+
+    });       
+       });
+   
+</script>
+</head>
+
+
+<body>
+    <h1>ثبت نام
+    </h1>
+    <h2 style="display:none;">ثبت نام
+    </h2>
+    <div class="container">
+       
+            <div class="flex-container" style="margin-top:3em" ;>
+                <div class="input-group input-group-lg">
+                    <input type="text" class="form-control" name="FirstName" id="fname" placeholder="نام" autocomplete="off" required>
+                </div>
+                <div class="input-group input-group-lg">
+                    <input type="text" class="form-control" name="LastName" id="lname" placeholder="نام خانوادگی" autocomplete="off" required>
+                </div>
+                <div class="input-group input-group-lg">
+                    <input type="text" class="form-control" name="Username" id="uname" placeholder="نام کاربری" autocomplete="off" required>
+                </div>
+                <div class="input-group input-group-lg">
+                    <input type="password" class="form-control" name="Password" id="pword" placeholder="گذرواژه" autocomplete="on" required>
+                </div>
+                <div class="input-group input-group-lg">
+                    <input type="tel" class="form-control" name="Tel" id="tel" placeholder="شماره همراه" autocomplete="on" required>
+                </div>
+                <div class="input-group input-group-lg">
+                    <input type="email" class="form-control" name="Email" id="email" placeholder="ایمیل" autocomplete="on" required>
+                </div>
+            </div>
+            <div id="inp">
+                <div id="gulle" style="display:none;">
+                </div>
+
+                <button  id="sub"></button>
+            </div>
+     
+    </div>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,179 @@
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: space-between;
+    }
+    
+    #inp {
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        align-items: flex-end;
+        margin-top: -36.5em;
+        align-self: flex-end;
+        margin-left: 10em;
+    }
+    
+    body {
+        background: url("./img/bg.png") repeat left top fixed;
+        background-size: 41.5em 28em;
+        margin: auto;
+        height: auto;
+    }
+    
+    h1 {
+        text-align: left;
+        background-color: #3e0b71;
+        color: #ffffff;
+        padding: 0.7em;
+        margin-top: 0em;
+        font-family: "Orial.ttf";
+        font-size: 2em;
+        box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    }
+    h2{
+        text-align: left;
+        background-color: #3e0b71;
+        color: #efd072;
+        padding: 0.7em;
+        margin-top: 0em;
+        font-family: "Orial.ttf";
+        font-size: 2em;
+        box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    }
+    
+    .input-group .form-control {
+        position: relative;
+        z-index: 2;
+        flex: 1 1 auto;
+        width: 1%;
+        margin-bottom: 1em;
+    }
+    
+    .form-control-lg,
+    .input-group-lg>.form-control,
+    .input-group-lg>.input-group-addon,
+    .input-group-lg>.input-group-btn>.btn {
+        padding: 0.5rem 1rem;
+        font-size: 1em;
+        line-height: 1.5;
+        border-radius: 3.9em;
+        margin-left: 1.5em;
+        margin-right: 1.5em;
+    }
+    
+    .form-control {
+        color: #575449;
+        background-image: none;
+        background-clip: padding-box;
+        transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+        transition-property: border-color, box-shadow;
+        transition-duration: 0.15s, 0.15s;
+        transition-timing-function: ease-in-out, ease-in-out;
+        transition-delay: initial, initial;
+    }
+    
+    button,
+    input {
+        overflow: auto;
+    }
+    
+    button,
+    input,
+    optgroup,
+    select,
+    textarea {
+        margin: auto;
+        font-family: inherit;
+    }
+    
+    input[type=text] {
+        border: 0.2em solid #330066;
+        box-sizing: border-box;
+        text-align: center;
+        background-color: #ffffff;
+    }
+    
+    input[type=password] {
+        border: 0.2em solid #330066;
+        box-sizing: border-box;
+        text-align: center;
+        background-color: #ffffff;
+    }
+    
+    input[type=tel] {
+        border: 0.2em solid #330066;
+        box-sizing: border-box;
+        text-align: center;
+        background-color: #ffffff;
+    }
+    
+    input[type=email] {
+        border: 0.2em solid #330066;
+        box-sizing: border-box;
+        text-align: center;
+        background-color: #ffffff;
+    }
+    
+    input[type=submit] {
+        width: 3em;
+        background-color: #47e810;
+        color: white;
+        padding: 1em;
+        border: none;
+        border-radius: 1em;
+        cursor: pointer;
+    }
+    
+    input[type=text]:focus {
+        border: 0.2em solid #8056AA;
+        box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    }
+    
+    input[type=password]:focus {
+        border: 0.2em solid #8056AA;
+        box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    }
+    
+    input[type=tel]:focus {
+        border: 0.2em solid #8056AA;
+        box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    }
+    
+    input[type=email]:focus {
+        border: 0.2em solid #8056AA;
+        box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    }
+    
+    img {
+        vertical-align: middle;
+        border-style: none;
+        width: 20em;
+        height: 6em;
+    }
+#sub{
+margin-left :1em;
+margin-top:-1em;
+height: 5em;
+width: 6em;
+background-image: url("./img/checkmark.svg");
+background-repeat: no-repeat;
+background-size: 6em 4.5em;
+background-color: transparent;
+border: none;
+outline: none;
+
+
+}
+#gulle{
+    height: 1em;
+    width: 1em;
+    margin-left: 1em;
+    margin-top:0.5em;
+    background-color: #efd072;
+    border-radius: 50%;
+    outline: none;
+    border: none;
+}
